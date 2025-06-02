@@ -2,61 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Helcom eCommerce Consulting – Performance marketing for online growth."/>
-  <title>Helcom – eCommerce Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helcom</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Performance-Driven eCommerce Consulting</h1>
-      <p>Helping your business scale profitably through data and strategy.</p>
-      <a href="#contact" class="cta">Get a Free Consultation</a>
-    </div>
+<body class="bg-[#121212] text-[#e0f7ff] font-sans">
+  <header class="bg-[#1e1e1e] sticky top-0 z-50 p-4">
+    <nav class="flex items-center justify-between max-w-7xl mx-auto">
+      <div class="flex items-center gap-3">
+        <img src="logo.webp" alt="Helcom Logo" class="w-10 h-10" />
+        <span class="text-xl font-bold text-[#4ec6ff]">Helcom</span>
+      </div>
+      <ul class="flex gap-6 text-sm font-medium text-[#80dfff]">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service">
-        <h3>Strategy & Audits</h3>
-        <p>Deep analysis of your business model and digital channels to uncover scalable growth opportunities.</p>
-      </div>
-      <div class="service">
-        <h3>Conversion Rate Optimization</h3>
-        <p>Turn more clicks into customers with evidence-based design and behavioral insights.</p>
-      </div>
-      <div class="service">
-        <h3>Ad Management</h3>
-        <p>ROI-focused campaigns across Google, Meta, Amazon, and more.</p>
-      </div>
+  <section id="home" class="text-center py-20 px-4 bg-gradient-to-b from-[#121212] to-[#1e1e1e]">
+    <img src="logo.webp" alt="Helcom Logo" class="mx-auto w-24 mb-4" />
+    <h1 class="text-4xl md:text-5xl font-bold text-[#4ec6ff]">Helcom</h1>
+    <p class="mt-4 text-lg text-gray-300">Modern Solutions for Consulting & eCommerce</p>
+  </section>
+
+  <section id="about" class="max-w-3xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-semibold text-[#4ec6ff] mb-6">About Us</h2>
+    <p class="text-gray-300">
+      Helcom is a consulting and ecommerce company focused on delivering cutting-edge solutions for digital businesses.
+      Whether you're a startup or an enterprise, we help you grow smart and scale faster.
+    </p>
+  </section>
+
+  <section id="products" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-semibold text-[#4ec6ff] mb-10 text-center">Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-[#1e1e1e] border border-[#4ec6ff44] rounded-lg p-8 text-center text-[#4ec6ff]">Coming Soon</div>
+      <div class="bg-[#1e1e1e] border border-[#4ec6ff44] rounded-lg p-8 text-center text-[#4ec6ff]">Coming Soon</div>
+      <div class="bg-[#1e1e1e] border border-[#4ec6ff44] rounded-lg p-8 text-center text-[#4ec6ff]">Coming Soon</div>
     </div>
   </section>
 
-  <section class="testimonials">
-    <h2>What Clients Say</h2>
-    <blockquote>
-      “Helcom helped us increase our profit margins by 30% in just two quarters. Their team is sharp and strategic.”
-      <cite>— Client Name, eCommerce Brand</cite>
-    </blockquote>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Get in Touch</h2>
-    <form action="https://formspree.io/f/YOUR_ID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <textarea name="message" placeholder="How can we help you?" required></textarea>
-      <button type="submit">Send Message</button>
+  <section id="contact" class="max-w-3xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-semibold text-[#4ec6ff] mb-6">Contact Us</h2>
+    <form class="flex flex-col gap-4">
+      <input type="text" placeholder="Name" required class="bg-[#222] text-white px-4 py-3 rounded border border-[#4ec6ff33]" />
+      <input type="email" placeholder="Email" required class="bg-[#222] text-white px-4 py-3 rounded border border-[#4ec6ff33]" />
+      <textarea placeholder="Your message" required class="bg-[#222] text-white px-4 py-3 rounded border border-[#4ec6ff33] h-32"></textarea>
+      <button type="submit" class="bg-[#4ec6ff] text-black font-bold py-3 rounded hover:opacity-90">Send</button>
     </form>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Helcom. All rights reserved.</p>
+  <footer class="bg-[#0f0f0f] text-white py-12 text-center">
+    <div class="flex flex-col items-center space-y-4">
+      <img src="logo.webp" alt="Helcom Logo" class="w-16 h-16" />
+      <p class="text-lg font-semibold">‪(321) 366-0614‬</p>
+      <p class="text-lg">contact@helcom.net</p>
+    </div>
+    <p class="mt-6 text-sm text-gray-400">&copy; 2025 Helcom. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
